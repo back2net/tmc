@@ -1,4 +1,5 @@
-package torrentmonitorclient
+package tmc
+// TorrentMonitor Client
 
 import (
 	"encoding/json"
