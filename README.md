@@ -52,6 +52,7 @@ func main() {
 }
 ```
 Also you need to create `.env` file with the contents:
+
 TMON_URL=http://your.torrentmonitor.com
 TMON_PASSWORD=megasecretpassword
 
@@ -64,4 +65,4 @@ TMON_PASSWORD=megasecretpassword
 # Author doesn't undestand what he is doing 
 # and only pretends that he is a programmer x_x
 
-Thanks for [ElizarovEugene](github.com/ElizarovEugene/TorrentMonitorfor) his work!
+Thanks to [ElizarovEugene](github.com/ElizarovEugene/TorrentMonitorfor) for his work!
