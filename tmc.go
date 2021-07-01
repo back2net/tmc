@@ -1,4 +1,4 @@
-package gotmc
+package tmc
 
 // GoTorrentMonitor Client
 
