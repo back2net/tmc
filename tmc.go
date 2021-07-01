@@ -1,4 +1,4 @@
-package tmc
+package gotmc
 // TorrentMonitor Client
 
 import (
