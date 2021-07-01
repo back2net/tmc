@@ -1,5 +1,5 @@
 package gotmc
-// TorrentMonitor Client
+// GoTorrentMonitor Client
 
 import (
 	"encoding/json"
