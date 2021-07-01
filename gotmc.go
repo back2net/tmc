@@ -1,4 +1,5 @@
 package gotmc
+
 // GoTorrentMonitor Client
 
 import (
@@ -67,9 +68,10 @@ func setCookies(client *http.Client, tmon_url, tmon_password string) {
 	client.Jar.SetCookies(u, resp.Cookies())
 
 	defer resp.Body.Close()
+}
 
 func AddTitleToMonitor(payload url.Values) (msg string, err error) {
-	
+
 	timeout := time.Duration(5 * time.Second)
 	jar, err := cookiejar.New(nil)
 	if err != nil {
@@ -97,7 +99,7 @@ func AddTitleToMonitor(payload url.Values) (msg string, err error) {
 		log.Fatal(err)
 	}
 	defer resp.Body.Close()
-	
+
 	var res map[string]interface{}
 	json.NewDecoder(resp.Body).Decode(&res)
 	msg = fmt.Sprintf("%v", res["msg"])
