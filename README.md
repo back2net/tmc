@@ -48,7 +48,7 @@ func main() {
 		"path":    {"/home/media/storage"},
 	}
 	tmc.AddTitleToMonitor(tracker_data)
-    tmc.AddTitleToMonitor(series_data)
+    	tmc.AddTitleToMonitor(series_data)
 }
 ```
 Also you need to create `.env` file with the contents:
