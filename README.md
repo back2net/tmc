@@ -1,4 +1,4 @@
-## TorrentMonitor Golang client package
+## TorrentMonitor Golang client module
 *project sucks and code is so sh1tty x_x*
 
 **For now it can:**
