@@ -1,6 +1,6 @@
-package tmc
-
 // GoTorrentMonitor Client
+// It is alpha implementation just for telegram bot using, for now.
+package tmc
 
 import (
 	"encoding/json"
