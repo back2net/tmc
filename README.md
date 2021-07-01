@@ -53,7 +53,10 @@ func main() {
 ```
 Also you need to create `.env` file with the contents:
 
+
 TMON_URL=http://your.torrentmonitor.com
+
+
 TMON_PASSWORD=megasecretpassword
 
 
