@@ -51,7 +51,19 @@ func main() {
     	tmc.AddTitleToMonitor(series_data)
 }
 ```
-Also you need to create `.env` file with the contents:
+Function returns standart message from TorrentMonitor or error with message if it occurs.
+
+You can standart handle it for golang:
+```go
+msg, err := tmc.AddTitleToMonitor(tracker_data)
+if err != nil {
+    panic(err)
+}
+fmt.Println(msg)
+```
+
+
+*Also you need to create `.env` file with the contents:*
 
 
 TMON_URL=http://your.torrentmonitor.com
