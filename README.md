@@ -48,7 +48,7 @@ func main() {
 		"path":    {"/home/media/storage"},
 	}
 	tmc.AddTitleToMonitor(tracker_data)
-    	tmc.AddTitleToMonitor(series_data)
+	tmc.AddTitleToMonitor(series_data)
 }
 ```
 Function returns standart message from TorrentMonitor or error with message if it occurs.
