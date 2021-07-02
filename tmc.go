@@ -18,6 +18,8 @@ import (
 	"github.com/joho/godotenv"
 )
 
+var tmon_url, tmon_password string = getTmonSettings()
+
 func init() {
 	// loads values from .env into the system
 	if err := godotenv.Load(); err != nil {
@@ -40,7 +42,7 @@ func getTmonSettings() (tmon_url, tmon_password string) {
 	return tmon_url, tmon_password
 }
 
-func setCookies(client *http.Client, tmon_url, tmon_password string) {
+func setCookies(client *http.Client) {
 	login_data := url.Values{
 		"action":   {"enter"},
 		"password": {tmon_password},
@@ -82,9 +84,7 @@ func AddTitleToMonitor(payload url.Values) (msg string, err error) {
 		Jar:     jar,
 	}
 
-	tmon_url, tmon_password := getTmonSettings()
-
-	setCookies(client, tmon_url, tmon_password)
+	setCookies(client)
 
 	req, err := http.NewRequest(
 		"POST",
