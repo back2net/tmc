@@ -74,7 +74,7 @@ func setCookies(client *http.Client) {
 
 func AddTitleToMonitor(payload url.Values) (msg string, err error) {
 
-	timeout := time.Duration(5 * time.Second)
+	timeout := time.Duration(10 * time.Second)
 	jar, err := cookiejar.New(nil)
 	if err != nil {
 		log.Fatal(err)
